@@ -305,3 +305,30 @@
 //   const close_overlay_win = document.querySelector(".popup")
 //   close_overlay_win.style.display = "none"
 // }
+
+// const user = {
+//   name: "alex"
+// }
+
+// localStorage.setItem("name1", "alex") // Сохроняет строку в localStorage
+// const name = localStorage.getItem("name") // Получает данные из localStorage
+// console.log(name);
+// localStorage.clear() // удоляет всё из localStorage
+// localStorage.removeItem("name") // удоляет выбранный ключ из localStorage
+
+
+// // работа с ссылочными типами данными внутри localStorage
+// const arr = ["a","b","c"]
+// localStorage.setItem("array",JSON.stringify(arr)) //
+// console.log(JSON.parse(localStorage.getItem("array")));
+
+
+// const array = ["a","b","c","d"]
+// localStorage.setItem("newArray", JSON.stringify(array))
+// // localStorage.clear()
+// let lastArray = JSON.parse(localStorage.getItem("newArray"));
+// // lastArray.push("e")
+// const newArray = [...lastArray, "e"]
+// const idxArray = newArray.map((el, idx) => idx)
+
+// localStorage.setItem("idxArray", JSON.stringify(idxArray))
